@@ -1,8 +1,17 @@
 Search House
 
-<%= form_tag :search, method: :get do %>
-  <div class="form-group search-field">
-    <%= text_field_tag(:q) %>
-    <%= submit_tag "Search" %>
-  </div>
-<% end %>
+<%= button_to "Stark", search_path('stark'), method: :get, :query => 'stark' %>
+<%= button_to "Lannister", search_path('lannister'), method: :get, :query => 'lannister' %>
+<%= button_to "Targaryen", search_path('targaryen'), method: :get, :query => 'targaryen' %>
+<%= button_to "Tyrell", search_path('tyrell'), method: :get, :query => 'tyrell' %>
+<%= button_to "Greyjoy", search_path('greyjoy'), method: :get, :query => 'greyjoy' %>
+
+<!-- def houses
+  [
+    ['Stark', 'stark'],
+    ['Lannister', 'lannister'],
+    ['Targaryen', 'targaryen'],
+    ['Tyrell', 'tyrell'],
+    ['Greyjoy', 'greyjoy']
+  ]
+end -->
