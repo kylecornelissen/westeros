@@ -1,1 +1,7 @@
-House members: 7
+<%= @members.count %> Members
+
+House <%= @members.house_name %>
+<% @members.each do |member| %>
+  <%= member.name %>
+  <%= member.id %>
+<% end %>
