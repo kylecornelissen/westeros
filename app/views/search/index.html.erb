@@ -1,0 +1,13 @@
+
+<%= facade.members_count %> Members<br><br>
+
+<h1>House <%= facade.house_name %><br><br></h1>
+
+<div id='house_members'>
+  <% facade.members_list.each do |member| %>
+    <div class='member'>
+      <%= member[:name] %><br>
+      <%= member[:id] %><br><br>
+    </div>
+  <% end %>
+</div>

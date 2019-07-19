@@ -1,0 +1,17 @@
+Search House
+
+<%= button_to "Stark", search_path(house: 'stark'), method: :post, :query => 'stark' %>
+<%= button_to "Lannister", search_path(house: 'lannister'), method: :post, :query => 'lannister' %>
+<%= button_to "Targaryen", search_path(house: 'targaryen'), method: :post, :query => 'targaryen' %>
+<%= button_to "Tyrell", search_path(house: 'tyrell'), method: :post, :query => 'tyrell' %>
+<%= button_to "Greyjoy", search_path(house: 'greyjoy'), method: :post, :query => 'greyjoy' %>
+
+<!-- def houses
+  [
+    ['Stark', 'stark'],
+    ['Lannister', 'lannister'],
+    ['Targaryen', 'targaryen'],
+    ['Tyrell', 'tyrell'],
+    ['Greyjoy', 'greyjoy']
+  ]
+end -->
