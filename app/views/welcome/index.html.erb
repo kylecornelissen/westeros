@@ -1,1 +1,8 @@
-Hello
+Search House
+
+<%= form_tag :search, method: :get do %>
+  <div class="form-group search-field">
+    <%= text_field_tag(:q) %>
+    <%= submit_tag "Search" %>
+  </div>
+<% end %>
